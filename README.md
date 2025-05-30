@@ -15,7 +15,7 @@ El proyecto implementa y evalúa diferentes modelos de machine learning para la 
 - **/data:** Carpeta con los datasets utilizados durante el entrenamiento de los modelos.
 - **[/extra](extra):** Carpeta auxiliar usada para la obtención y procesamiento de los datos y para la construcción de los datasets de entrenamiento.
 - **[/SciServer](SciServer):** Carpeta con todos los archivos necesarios para que funcionen los comandos del módulo SciServer, para evitar instalaciones del mismo.
-- **/spectrums:** Carpeta con varios espectros descargados con [Fits Retriever](<1 Fits Retriever.ipynb>) que pueden usarse para probar los modelos (última línea del notebook de cualquier modelo).
+- **/spectrums:** Carpeta con varios espectros descargados con [Fits Retriever](<1 Fits Retriever.ipynb>) que pueden usarse para probar los modelos (última celda del notebook de cualquier modelo).
 - **/storage:** Carpeta destinada a almacenar los modelos entrenados y datos de evaluaciones.
 - **[1 Fits Retriever](<1 Fits Retriever.ipynb>):** Extrae todos los archivos .fits de la base de datos de la SDSS y los descarga.
 - **[2 Spaectra Processor](<2 Spectra Processor.ipynb>):** Programa clave para la obtención del dataset principal de entrenamiento, creado para seleccionar de manera un poco más uniforme los .fits sobre todo para que se aprovechen mucho más los datos con Z ≥ 4.
@@ -55,7 +55,7 @@ El proyecto implementa y evalúa diferentes modelos de machine learning para la 
    ```
    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
    ```
-4. Descarga los datasets de entrenamiento preprocesados y los espectros de prueba:
+4. Descarga los datasets de entrenamiento preprocesados (completamente opcionales), los espectros de prueba y los modelos (necesarios para interactuar con el codigo si se desea):
    - [/data](https://unioviedo-my.sharepoint.com/:f:/g/personal/uo284776_uniovi_es/EiifkyAiWZ9HqcUwLZppl-4BypXdYoWkSBb3XhzWpCAhqw?e=ihWSAh)
    - [/spectrums](https://unioviedo-my.sharepoint.com/:f:/g/personal/uo284776_uniovi_es/EhBzxXiQb2pOuGz-wNQrxUwBxq-gw6r4Nu20r6s61r3LSg?e=C3JDgY)
    - [/storage](https://unioviedo-my.sharepoint.com/:f:/g/personal/uo284776_uniovi_es/EsZm738_E2FKoC7dOV0W8hIB3JHfctzO4ZNtGTlCgmFDTg?e=Sc1KSx)
